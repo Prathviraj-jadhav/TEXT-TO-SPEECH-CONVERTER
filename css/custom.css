@@ -335,7 +335,7 @@ background:url('/img/bgimages.jpeg');
 	background-clip:text;
 }
 .card:hover .ahsokacard{
-background:url('/img/digu.jpeg');
+background: #000;
 	background-position:center;
 	-webkit-background-clip:text;
 	background-clip:text;
@@ -404,7 +404,7 @@ background:url('/img/digu.jpeg');
 	background-image:url('/img/Raj.jpg');
 }
 .ahsoka-bg{
-	background-image:url('/img/Digambar.jpg');
+	background-image:url('/img/WhatsApp\ Image\ 2022-05-17\ at\ 4.41.52\ AM.jpeg');
 }
 
 @media screen and (max-width:1080px){
