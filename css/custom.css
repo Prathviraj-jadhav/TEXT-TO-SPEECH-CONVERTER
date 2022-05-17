@@ -1,0 +1,414 @@
+/********** common setting **********/
+
+h2 {
+    font-size: 2.8rem !important;
+    font-weight: 700;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+.jumbotron {
+    margin-bottom: 0 !important;
+}
+
+.Rajverse-cta {
+    border-radius: 22px !important;
+    padding: 12px 30px !important;
+    font-weight: 700;
+    transition: .3s ease-in-out !important;
+}
+
+.Rajverse-cta:hover {
+    text-decoration: none;
+    transform: translateY(-5px);
+}
+
+.Rajverse-cta-wide {
+    width: 100%;
+}
+
+.cta-green {
+    background: #00FFAD;
+    color: #192440;
+}
+
+.cta-green:hover {
+    color: #ffffff;
+    background: #00e69c;
+}
+
+.cta-blue {
+    background: #192440;
+    color: #ffffff;
+}
+
+.cta-blue:hover {
+    color: #ffffff;
+    background: #121a2e;
+}
+
+.cta-ghost {
+    border: 2px solid #192440 !important;
+    color: #192440;
+}
+
+.cta-ghost:hover {
+    color: #ffffff;
+    background: #121a2e;
+}
+
+#banner {
+    background-size: cover;
+}
+
+/********** banner **********/
+#banner header {
+    overflow: hidden;
+}
+
+#banner header img {
+    max-width: 80px;
+}
+
+/********** feature (skew background) **********/
+.feature img {
+    width: 100%;
+    max-width: 480px;
+}
+
+#feature-first {
+    background: linear-gradient(168deg, #ffffff 55%, #00FFAD 0);
+}
+
+#feature-last {
+    background: #00FFAD;
+}
+
+/********** price table **********/
+#price-table {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+}
+
+#price-table__premium {
+    background: #192440;
+    color: #ffffff;
+}
+
+#price-table ul li {
+    padding: 5px 0;
+}
+
+/********** contact **********/
+#contact {
+    background-size: cover;
+}
+
+#contact ul li {
+    padding: 3px 0;
+}
+
+#contact form {
+    color: #00FFAD;
+}
+
+#contact form input,
+#contact form textarea {
+    background: transparent;
+    border: 1px solid #00FFAD;
+    color: #ffffff;
+}
+
+/********** copyright **********/
+#copyright {
+    background: #192440;
+    padding: 2rem 3rem;
+}
+
+#copyright #social-media a {
+    width: 40px;
+    height: 40px;
+    border-radius: 99%;
+    background: #ffffff;
+    transition: .4s ease;
+}
+
+#copyright #social-media a i {
+    color: #192440;
+    font-size: 1.2rem;
+    line-height: 40px;
+}
+
+#copyright #social-media a:hover {
+    background: #00FFAD;
+}
+
+#copyright #social-media a:hover i {
+    color: #ffffff;
+}
+
+/********** RWD **********/
+@media (max-width: 575px) {
+    #banner h1 {
+        font-size: 3.6rem;
+    }
+}
+
+
+/* ----------------------- */
+
+.demo-row {
+    background-color: rgb(255, 255, 255);
+    padding: 50px 0;
+  }
+  
+  
+  /*Implement*/
+  .sponsor-feature {
+      background-color: rgb(255, 255, 255);
+      padding: 20px;
+      min-height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 5px 0;
+  }
+  
+  #id-sponsors .carousel {
+      margin-bottom: 20px;
+  }
+  #id-sponsors .item {
+      padding-bottom: 20px;
+      
+  }
+  #id-sponsors .carousel-indicators {
+      bottom: -25px;
+  }
+
+  /* ------------------------------------------- */
+  .raj{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ad74e2;
+  }
+  .profile-card{
+    position: relative;
+    width: 300px;
+  height: 300px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+    margin: 0 25px;
+   
+  }
+  .profile-card:hover{
+    border-radius: 10px;
+    height: 260px;
+  }
+  .profile-card .img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+    z-index: 99;
+    cursor: pointer;
+  }
+  .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+  }
+  .profile-card:hover .img{
+    transform: translateY(-90px);
+  }
+  .profile-card:hover img{
+    border-radius: 10px;
+  }
+  .caption{
+    text-align: center;
+    transform: translateY(-80px);
+    opacity: 0;
+    transition: .6s;
+  }
+  .profile-card:hover .caption{
+    opacity: 1;
+  }
+  .caption h3{
+    font-size: 25px;
+   
+  }
+  .caption p{
+    font-size: 17px;
+    color: #0c52a1;
+    font-weight: bold;
+  }
+  .social-links a{
+    color: #333;
+    font-size: 21px;
+    transition: .6s;
+     
+  }
+  i{
+    margin-top: 10px;
+    padding: 5px;
+  }
+  .social-links a:hover{
+    color: #0c52a1;
+  }
+  
+
+  /* --------------------------------------------------------------------------------- */
+  
+
+  :root{
+	--quick:all .15s ease-in-out;
+	--slow:all .5s ease-in-out;
+	/* I'll be slowly transferring the colors into variables as I feel like it */
+	--vadericon:#ffe7e2;
+	--vadericonshadow:#c11e22;
+	--vadericonhover:#c11e22;
+	--kenobiicon:#faf4fb;
+	--kenobiiconshadow:#162f7e;
+	--kenobiiconhover:#3565e0;
+	--ahsokaicon:#ffffff;
+	--ahsokaiconshadow:#9f9f9f;
+	--ahsokaiconhover:#a9a9a9;
+}
+
+.profilecards{
+	min-height:100%;
+	margin:0;
+}
+.profilecards{
+	display:flex;
+	background:#242424;
+	align-items:center;
+	justify-content:center;
+}
+.card{
+	display:inline-block;
+	height:500px;
+	width:300px;
+	overflow:hidden;
+	margin:25px;
+	box-shadow:10px 8px 12px rgba(0,0,0,.2);
+	position:relative;
+	background:transparent;
+	filter:grayscale(100%);
+	transition:var(--quick);
+}
+.card:hover{
+	filter:grayscale(0%);
+}
+.card:hover .bg{
+	width:110%;
+	height:110%;
+}
+.card:hover .biocard{
+	color:transparent;
+}
+.card:hover .vadercard{
+background:url('/img/images.jpeg');
+	background-position:center;
+	-webkit-background-clip:text;
+	background-clip:text;
+}
+.card:hover .kenobicard{
+background:url('/img/bgimages.jpeg');
+	background-position:center;
+	-webkit-background-clip:text;
+	background-clip:text;
+}
+.card:hover .ahsokacard{
+background:url('/img/digu.jpeg');
+	background-position:center;
+	-webkit-background-clip:text;
+	background-clip:text;
+}
+
+.icons{
+	position:absolute;
+	display:flex;
+	flex-direction:column;
+	padding:15px;
+}
+.icon{
+	text-decoration:none;
+	text-align:center;
+	font-size:1.1em;
+	transition:var(--quick);
+}
+.biocard{
+	position:absolute;
+	bottom:0;
+	right:15px;
+	text-align:right;
+	transition:var(--slow);
+}
+.vadercard, .kenobicard, .ahsokacard{
+	background-position:center;
+}
+.vadercon{
+	color:var(--vadericon);
+	text-shadow:0px 0px 14px var(--vadericonshadow);
+}
+.vadercon:hover{
+	color:var(--vadericonhover);
+}
+.kenobicon{
+	color:var(--kenobiicon);
+	text-shadow:0px 0px 14px var(--kenobiiconshadow);
+}
+.kenobicon:hover{
+	color:var(--kenobiiconhover);
+}
+.ahsokacon{
+	color:var(--ahsokaicon);
+	text-shadow:0px 0px 6px var(--ahsokaiconshadow);
+}
+.ahsokacon:hover{
+	color:var(--ahsokaiconhover);
+}
+.fa-brands{
+	margin:2px 0;
+}
+.bg{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	z-index:-1;
+	transition:var(--slow);
+}
+.vader-bg{
+	background-image:url('/img/Yogesh.jpg');
+}
+.kenobi-bg{
+	background-image:url('/img/Raj.jpg');
+}
+.ahsoka-bg{
+	background-image:url('/img/Digambar.jpg');
+}
+
+@media screen and (max-width:1080px){
+	body{
+		flex-direction:column;
+	}
+}
