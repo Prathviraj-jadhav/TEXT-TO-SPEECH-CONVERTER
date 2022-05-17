@@ -88,7 +88,7 @@
                     <h2 class="font-weight-bold">Safe and reliable</h2>
                     <p class="my-4">
                         Text to speech conversion is a very useful software tool. It is used in many applications such as vocal monitoring systems for Visual impairments & literacy issues Peoples, web browsers, mobile phones, PCs, Laptops and so on.</p>
-                    <a href="#" class="btn my-4 font-weight-bold Rajverse-cta cta-blue">Learn More</a>
+                    <a href="https://www.readspeaker.com/learn-more/benefits-of-text-to-speech/" class="btn my-4 font-weight-bold Rajverse-cta cta-blue">Learn More</a>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">
                     <img src="img/feature-1.png" alt="Safe and reliable" class="mx-auto d-block">
@@ -261,6 +261,7 @@
 
 
     <!-- contact -->
+   
     <div class="jumbotron jumbotron-fluid" id="contact" style="background-image: url(img/contact-bk.jpg);">
         <div class="container my-5">
             <div class="row justify-content-between">
@@ -277,7 +278,7 @@
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <form>
+                    <form onsubmit="sendEmail(); reset(); return false">
                     	<div class="row">
 	                        <div class="form-group col-md-6">
 	                            <label for="name">Your Name</label>
@@ -292,12 +293,27 @@
 	                        <label for="message">Message</label>
 	                        <textarea class="form-control" id="message" rows="3"></textarea>
 	                    </div>
-                        <button type="submit" class="btn font-weight-bold Rajverse-cta Rajverse-cta-wide cta-green my-3">Submit</button>
+                        <button type="submit" class="btn my-4 font-weight-bold Rajverse-cta cta-green">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        function sendEmail(){
+            Email.send({
+    SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
+    To : 'jraj9500@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+        }
+    </script>
 
 	<!-- copyright -->
 	<div class="jumbotron jumbotron-fluid" id="copyright">
